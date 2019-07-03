@@ -1,0 +1,50 @@
+body{
+	margin: 0px;
+	background-image: url('bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: fixed;
+}
+h2{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  font-size: 5em;
+  background-color: #179B77;
+  color: #ffffff;
+  padding: 10px;
+
+}
+#header{
+  background-color: #24313C;
+  margin-top: -70px;
+  margin-bottom: -50px;
+  width: 100%;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+.ta-header {
+  list-style: none;
+  float: right;
+  width: 20%;
+  margin-top: 18px;
+
+}
+.ta-header li{
+  float: left;
+}
+.ta-header li a {
+  text-decoration: none;
+  padding: 15px;
+  background: #222C35;
+  color: #a0b3b0;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  margin-left: -10px;
+}
+.ta-header li a:hover {
+  background: #179b77;
+  color: #ffffff;
+}

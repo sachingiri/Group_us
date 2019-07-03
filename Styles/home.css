@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 10px;
+  color: #414141;
+  font-size: 1.5em;
+  line-height: 2em;
+  overflow: hidden;
+  margin: 0px;
+  background-image: url('../Header/bg1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h2{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  font-size: 5em;
+  background-color: #179B77;
+  color: #ffffff;
+  padding: 10px;
+}
+#header{
+  background-color: #24313C;
+  margin-top: -20px;
+  margin-bottom: -50px;
+  width: 100%;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+.tab-header {
+  list-style: none;
+  float: right;
+  width: 20%;
+  margin-top: 0px;
+
+}
+.tab-header li{
+  float: left;
+}
+.tab-header li a {
+  text-decoration: none;
+  padding: 15px;
+  background: #222C35;
+  color: #a0b3b0;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  margin-left: -10px;
+}
+.tab-header li a:hover {
+  background: #179b77;
+  color: #ffffff;
+}
+
+
+.chat-box {
+  margin: 40px auto;
+  max-width: 500px;
+  height: 680px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  /*border : 1px solid #000;*/
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+
+.chat-container {
+    background-image: url("backgroun.jpg");
+  position: absolute;
+  padding: 20px;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+
+.chat-container.active {
+  transform: translateX(0);
+  transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  opacity: 1;
+}
+
+.chat-container.hidechat {
+  transform: translateX(-10%);
+  transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  opacity: 0;
+}
+
+p {
+  margin: 0;
+}
+
+#ChatMessages {
+  float: left;
+  width: auto;
+  max-width: 80%;
+  position: relative;
+  clear: both;
+  background-image: url('chatbg.jpg');
+  padding: 0.5em 1em;
+  border-radius: 3px;
+  box-shadow: 0 5px 30px rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  font-size: 1em;
+  margin-top: 30px;
+  opacity: 1;
+}
+
+#ChatMessages:after {
+  border-radius: 20px / 5px;
+  content: '';
+  display: block;
+  position: absolute;
+  border: 8px solid transparent;
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+  bottom: 1px;
+  transform: rotateZ(-90deg);
+  left: -15px;
+}
+
+#ChatMessages-alt {
+  float: right;
+}
+
+#ChatMessages-alt:after {
+  left: auto;
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+  transform: rotateZ(90deg);
+  right: -16px;
+}
+#ChatMessages a:link{
+  font-size: .7em;
+  margin-left: 0px;
+  color: black;
+  text-decoration: none;
+  line-height: normal;
+  outline: none;
+  padding: 0px;
+  font-size: 1em;
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: 0em;
+  -webkit-transition: none;
+  transition: none;
+  -webkit-appearance: none;
+  display: inline-block;
+ 
+}
+#ChatMessages a:hover{
+
+  font-size: .7em;
+  margin-left: 0px;
+  background: none;
+  color: black;
+  text-decoration: none;
+  line-height: normal;
+  outline: none;
+  padding: 0px;
+  font-size: 1em;
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: 0em;
+  -webkit-transition: none;
+  transition: none;
+  -webkit-appearance: none;
+  display: inline-block;
+
+}
+.datestamp {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #8b91a0;
+  float: left;
+  opacity: 0;
+}
+
+.dt-alt {
+  float: right;
+}
+
+.chat-control {
+  margin-top: 500px;
+  outline: none;
+}
+
+#ChatText{
+  width: 80%;
+  float: left; 
+  border: none;
+  background: #ffffff;
+  color: rgba(0, 0, 0, 1);
+  padding: 0.9em;
+  font-size: 1.5em;
+
+}
+
+#ChatText focus {
+
+  outline: none !important;
+}
+
+.chat-header {
+  background: #24323D;
+  padding: 0.5em;
+  padding-bottom: .7em;
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+
+.chat-header span {
+  font-size: 12px;
+  position: absolute;
+  margin: 47px -50px;
+  font-style: italic;
+
+}
+
+.user{
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #DFDFEF;
+  margin: 0 10px;
+  background-size: cover;
+  text-align: left;
+}
+
+.user:nth-child(1) {
+  background-image: url(http://vignette3.wikia.nocookie.net/fairytail/images/0/02/Mugshot_of_Erza.png/revision/latest?cb=20130509171537);
+}
+.user-profilename{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+    text-decoration:  ;
+    font-size: 1.5em;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: capitalize;
+    margin-right: -20px;
+    user-select:none;
+    cursor: default;
+}
+/* unvisited link */
+a:link {
+  line-height: 10px;
+  outline: none;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+  display: inline-block;
+  margin-left: 170px;
+}
+
+a:hover{
+  text-decoration: none;
+  background: #179b77;
+  line-height: 10px;
+  outline: none;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+  display: inline-block;
+}
+
+.UserNameS{
+  font-size: 0.9em;
+  font-weight: bold;
+  font-family: 'Titillium Web', sans-serif;
+  text-transform: uppercase;
+  margin-left: -15px;
+  border-radius: 0px 10px 2px 4px;
+  line-height: 0px;
+  background: #44786C;
+  padding: 5px;
+}
+.ChatMessageS{
+  text-decoration: none;
+  font-size: 2em;
+  font-family: 'Baloo Bhaina';
+  color: rgba(0, 0, 0, 0.9);
+  line-height: 0px;
+}
+
+.file{
+  float: right;
+  width: 20%;
+  height: 73px;
+  border: none;
+  background: #24323D;
+  color:#ffffff;
+  font-size: 1.5em;
+}

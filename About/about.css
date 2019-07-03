@@ -1,0 +1,95 @@
+body{
+	margin: 0px;
+    background-image: url('bg1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h2{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 5em;
+	background-color: #179B77;
+	padding: 10px;
+	color: #ffffff;
+}
+#header{
+	background-color: #24313C;
+	margin:0px;
+	margin-top: -90px;
+ 	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+
+}
+.tab-header {
+  list-style: none;
+  padding: 0;
+  float: right;
+  width: 20%;
+}
+.tab-header:after {
+  content: "";
+  clear: both;
+}
+
+.tab-header li a {
+  text-decoration: none;
+  padding: 15px;
+  background: #222C35;
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 20%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+.tab-header li a:hover {
+  background: #179b77;
+  color: #ffffff;
+}
+#in{
+  color: #ffffff;
+  background-color: #222D38;
+  opacity: 0.9;
+  font-family: 'Titillium Web', sans-serif;
+}
+#in h1{
+  font-size: 3em;
+  content: '\2022';
+
+}
+#in pre{
+  font-size: 1.6em;
+  line-height: 12px;
+}
+#me{
+  color: #ffffff;
+  background-color: #222D38;
+  opacity: 0.9;
+  font-family: 'Titillium Web', sans-serif;
+  height: 300px;
+  width: 40%;
+  float: right;
+  margin-top: -74px;
+ 
+}
+.dev{
+  text-decoration: underline;
+  font-size: 3em;
+  text-align: left;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+.name{
+  font-size: 2em;
+  font-weight: 100;
+}
+.more{
+  font-size: 1.3em;
+  margin-top: -10px;
+}
+#fbart{
+  height: 150px;
+  width: 150px;
+  margin-left: 400px;
+  margin-top: -130px;
+}
